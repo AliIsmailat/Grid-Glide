@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainpage{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/grid3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#title{
+    font-family: Orbitron, sans-serif; 
+    color: white;
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 3px 3px 5px black;
+    margin: 0;
+}
+
+
+.navbar{
+    margin: 0;
+    padding: 0 !important;
+    width: 100vw;
+    display: block !important;
+    text-align: center;
+    background-color: hsla(0, 0%, 0%, 0.521)
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.6em;
+    font-family: Orbitron, sans-serif;
+    transition: 0.4s;
+}
+
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+    background-color:black;
+}
+
+
+.active{
+    border: 2px solid white;
+}
+
+
+
+
+
+#playpage{
+    background-image: linear-gradient(to right, purple, pink);
+    background-color: purple;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#playtitle{
+    padding: 1em;
+    text-align: center;
+    font-size: 2em;
+    font-family: Orbitron, sans-serif;
+}
+
+
+#playtext{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Orbitron, sans-serif;
+}
+
+#reloadicon{
+    color: black;
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    font-size: 2.8em;
+
+
+}
+
+
+
+#howtoplaypage{
+    background-image: linear-gradient(to right, purple, pink);
+    background-color: purple;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#howtoplaytitle{
+    padding: 1em;
+    text-align: center;
+    font-size: 2em;
+    font-family: Orbitron, sans-serif;
+}
+
+#howtoplaytext{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Bebas Neue, Exo, Orbitron, sans-serif;
+
+}
+
+
+
+#aboutgridglidepage{
+    background-image: linear-gradient(to right, purple, pink);
+    background-color: purple;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#aboutgridglidetitle{
+    padding: 1em;
+    text-align: center;
+    font-size: 2em;
+    font-family: Orbitron, sans-serif;
+}
+
+
+
+#aboutgridglidetext{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: Bebas Neue, Exo, Orbitron, sans-serif;
+
+}
+
+
+
+
+
+#randomimagespage{
+    background-image: linear-gradient(to right, purple, pink);
+    background-color: purple;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#randomimagestitle{
+    padding: 1em;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: Orbitron, sans-serif;
+}
+
+.allabilder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.allabilder img{
+    width: 19%;
+    aspect-ratio: 16 / 9;
+    border: 3px solid black;
+    box-shadow: 3px 3px 30px;
+
+}
+
+.allabilder img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 3px 3px 100px black;
+}
+
+
+
+
+
+
+
+
+#reportbugspage{
+    background-image: linear-gradient(to right, purple, pink);
+    background-color: purple;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+#reportbugstitle{
+    font-family: Orbitron, sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+.container{
+    background-color: hsl(0, 52%, 94%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 2px;
+    padding: 20px;
+}
+
+.form-label{
+    font-weight: bold;
+    font-family: Exo, Orbitron, sans-serif;
+}
+
+
+#buttonen{
+    text-align: center;
+}
+
+
+.btn{
+    background-color: hsl(0, 0%, 100%) !important;
+    font-family: Orbitron, sans-serif !important;
+    font-size: 1.4em !important;
+    color: black !important;
+    border: 2px solid black !important;
+}
+
+.btn:hover{
+    box-shadow: 2px 2px 5px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    #title h1 {
+        font-size: 6rem; 
+    }
+
+    .allabilder img{
+        width: 30%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .titles h1{
+        font-size: 2em;
+    }
+
+    #playtitle{
+        font-size: 1.4em;
+    }
+
+    #playtext{
+        font-size: 1.2em;
+    }
+
+    #howtoplaytitle{
+        font-size: 1.4em;
+    }
+
+    #howtoplaytext{
+        font-size: 1.2em;
+    }
+
+    #aboutgridglidetitle{
+        font-size: 1.4em;
+    }
+
+    #aboutgridglidetext{
+        font-size: 1.2em;
+    }
+
+    #randomimagestitle{
+        font-size: 1.4em;
+    }
+
+    .allabilder img{
+        width: 40%;
+    }
+
+}
